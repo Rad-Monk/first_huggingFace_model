@@ -7,3 +7,8 @@ test:
 
 debug:
 	python -m pytest -vv --pdb
+
+push:
+	git add *
+	git commit 
+	git push

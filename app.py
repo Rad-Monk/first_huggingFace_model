@@ -4,7 +4,7 @@ import gradio as gr
 model = pipeline("summarization")
 
 def predict(prompt):
-    summary = model(prompt)[0]["summary text"] # what type of input into model is this?
+    summary = model(prompt)[0]["summary_text"] # what type of input into model is this?
     return summary
 
 with gr.Blocks() as demo:
